@@ -1282,7 +1282,7 @@ footer {
 
 @media screen and (max-width: 425px) {
   #hero-area strong{
-    font-size: 21px;
+    font-size: 21px; 
   }
 }
 
