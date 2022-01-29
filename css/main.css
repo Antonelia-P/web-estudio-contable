@@ -643,7 +643,7 @@ button:focus {
   6. Features Section Style
    ========================================================================== */
 #features {
-  background: url(../img/bg1.jpg) fixed no-repeat;
+  background: url(../img/escritorio.jpeg) fixed no-repeat;
   background-size: cover;
   color: #fff;
   overflow: hidden;
@@ -939,8 +939,7 @@ button:focus {
   /* background: url(../img/rober6.jpg) fixed; */
 
   background:linear-gradient( rgba(10, 78, 13, 0.637) 100%, rgba(10, 78, 13, 0.637) 100%),url(../img/rober6.jpg);
-
-
+  background-size: cover;
   position: relative;
 }
 
