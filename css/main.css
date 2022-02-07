@@ -543,6 +543,28 @@ button:focus {
   background: rgb(10, 78, 13);
 }
 
+/* MIO */
+.navbar-header h1{
+  color: rgb(10, 78, 13);
+  font-size: 30px;
+}
+
+@media screen and (max-width: 425px) {
+  .navbar-header h1{
+    font-size: 20px;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .navbar-header h1{
+    font-size: 20px;
+  }
+}
+
+
+/* FIN MIO */
+
 /* only small tablets */
 @media (min-width: 768px) and (max-width: 991px) {
   #nav-main li a.nav-link {
@@ -1333,3 +1355,48 @@ footer {
         transition: all 0.3s ease-out 0s; }
         .header_top .header_social ul li a:hover {
           color: #DE3660; } */
+
+
+
+/*===== HEADER TOP =====*/
+.header_top {
+  background-color: #fff;
+  padding-bottom: 0px; }
+  .header_top .header_info {
+    padding-top: 15px; }
+    .header_top .header_info ul li {
+      display: inline-block; }
+      .header_top .header_info ul li + li {
+        margin-left: 20px; }
+      .header_top .header_info ul li i {
+        margin-right: 5px;
+        font-size: 16px; }
+      .header_top .header_info ul li a {
+        font-size: 16px;
+        color: #747E88;
+        -webkit-transition: all 0.3s ease-out 0s;
+        -moz-transition: all 0.3s ease-out 0s;
+        -ms-transition: all 0.3s ease-out 0s;
+        -o-transition: all 0.3s ease-out 0s;
+        transition: all 0.3s ease-out 0s; }
+        @media (max-width: 767px) {
+          .header_top .header_info ul li a {
+            font-size: 14px; } }
+        .header_top .header_info ul li a:hover {
+          color: #DE3660; }
+  .header_top .header_social {
+    padding-top: 15px; }
+    .header_top .header_social ul li {
+      display: inline-block; }
+      .header_top .header_social ul li + li {
+        margin-left: 20px; }
+      .header_top .header_social ul li a {
+        font-size: 16px;
+        color: #747E88;
+        -webkit-transition: all 0.3s ease-out 0s;
+        -moz-transition: all 0.3s ease-out 0s;
+        -ms-transition: all 0.3s ease-out 0s;
+        -o-transition: all 0.3s ease-out 0s;
+        transition: all 0.3s ease-out 0s; }
+        .header_top .header_social ul li a:hover {
+          color: #DE3660; }

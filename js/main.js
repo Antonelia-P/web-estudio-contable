@@ -3,13 +3,16 @@
   "use strict";
 
   // Sticky Nav
-    $(window).on('scroll', function() {
-        if ($(window).scrollTop() > 200) {
-            $('.scrolling-navbar').addClass('top-nav-collapse');
-        } else {
-            $('.scrolling-navbar').removeClass('top-nav-collapse');
-        }
-    });
+  $(window).on('scroll', function() {
+    if ($(window).scrollTop() > 200) {
+        $('.scrolling-navbar').addClass('top-nav-collapse');
+        $('.indigo').addClass('fixed-top');
+        // debugger;
+    } else {
+        $('.scrolling-navbar').removeClass('top-nav-collapse');
+        $('.indigo').removeClass('fixed-top');
+    }
+  });
 
     /* 
    One Page Navigation & wow js
