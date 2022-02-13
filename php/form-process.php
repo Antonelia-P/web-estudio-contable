@@ -1,4 +1,7 @@
 <?php
+use PHPMailer\PHPMailer;
+
+$mail = new PHPMailer(true);
 
 $errorMSG = "";
 
@@ -17,11 +20,11 @@ if (empty($_POST["email"])) {
 }
 
 // MSG SUBJECT
-if (empty($_POST["msg_subject"])) {
-    $errorMSG .= "Subject is required ";
-} else {
-    $msg_subject = $_POST["msg_subject"];
-}
+// if (empty($_POST["msg_subject"])) {
+//     $errorMSG .= "Subject is required ";
+// } else {
+//     $msg_subject = $_POST["msg_subject"];
+// }
 
 
 // MESSAGE
@@ -32,7 +35,7 @@ if (empty($_POST["message"])) {
 }
 
 
-$EmailTo = "armanmia7@gmail.com";
+$EmailTo = "emanuel.higuera9@gmail.com";
 $Subject = "New Message Received";
 
 // prepare email body text
@@ -51,7 +54,28 @@ $Body .= $message;
 $Body .= "\n";
 
 // send email
-$success = mail($EmailTo, $Subject, $Body, "From:".$email);
+// $success = mail($EmailTo, $Subject, $Body, "From:".$email);
+
+// try {
+
+//     console.log('entra');
+//     $mail->isSMTP();
+//     $mail->Host = 'smtp.gmail.com';
+//     $mail->SMTPAuth = true;
+//     $mail->Username = 'emanuel.higuera9@gmail.com';
+//     $mail->Password = 'exoBjj2121';
+//     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+//     $mail->Port = '587';
+
+//     $mail->setFrom('emanuel.higuera9@gmail.com');
+//     $mail->addAdress('emanuel.higuera9@gmail.com');
+
+//     $mail->Subject = $Subject;
+//     $mail->Body = $Body;
+//     $mail->send();
+// } catch (\Throwable $th) {
+//     //throw $th;
+// }
 
 // redirect to success page
 if ($success && $errorMSG == ""){

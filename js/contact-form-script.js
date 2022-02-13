@@ -2,7 +2,7 @@ $("#contactForm").validator().on("submit", function (event) {
     if (event.isDefaultPrevented()) {
         // handle the invalid form...
         formError();
-        submitMSG(false, "Did you fill in the form properly?");
+        submitMSG(false, "");
     } else {
         // everything looks good!
         event.preventDefault();
@@ -18,15 +18,17 @@ function submitForm(){
     var msg_subject = $("#msg_subject").val();
     var message = $("#message").val();
 
-
+    debugger;
     $.ajax({
         type: "POST",
         url: "php/form-process.php",
         data: "name=" + name + "&email=" + email + "&msg_subject=" + msg_subject + "&message=" + message,
         success : function(text){
             if (text == "success"){
+                debugger;
                 formSuccess();
             } else {
+                debugger;
                 formError();
                 submitMSG(false,text);
             }

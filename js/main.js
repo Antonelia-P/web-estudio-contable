@@ -7,10 +7,21 @@
     if ($(window).scrollTop() > 200) {
         $('.scrolling-navbar').addClass('top-nav-collapse');
         $('.indigo').addClass('fixed-top');
-        // debugger;
+        const note = document.querySelector('.titulo-web-page');
+        note.style.color = 'rgb(10, 78, 13)';
+
+        // const noti = document.querySelector('.slicknav_menu .slicknav_icon-bar');
+        // noti.style.color = 'rgb(10, 78, 13)';
+
+
     } else {
         $('.scrolling-navbar').removeClass('top-nav-collapse');
         $('.indigo').removeClass('fixed-top');
+        const note = document.querySelector('.titulo-web-page');
+        note.style.color = '#fff';
+
+        // const noti = document.querySelector('.slicknav_menu .slicknav_icon-bar');
+        // noti.style.color = 'rgb(113, 233, 118);';
     }
   });
 
