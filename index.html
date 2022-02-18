@@ -366,7 +366,7 @@
           </div>
           <div class="col-lg-6 col-sm-6 col-xs-12">
             <div class="contact-block">
-              <form id="contactForm">
+              <!-- <form id="contactForm">
                 <div class="row">
                   <div class="col-md-12">
                     <div class="form-group">
@@ -395,7 +395,56 @@
                     </div>
                   </div>
                 </div>
-              </form>
+              </form> -->
+
+              <div class="">
+                <form id="form" class="form">
+                  <div class="form-control">
+                    <!-- <label for="nombre">nombre</label> -->
+                    <input class="form-control" type="text" placeholder="Nombre" id="nombre" />
+                    <!-- <i class="fas fa-check-circle"></i>
+                    <i class="lni lni-offer"></i> -->
+                    <small>Error message</small>
+                  </div>
+                  <div class="form-control">
+                    <!-- <label for="nombre">Email</label> -->
+                    <input class="form-control" type="email" placeholder="Email" id="email" />
+                    <!-- <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i> -->
+                    <small>Error message</small>
+                  </div>
+
+                  <div class="form-control">
+                    <!-- <label for="nombre">Email</label> -->
+                    <textarea class="form-control" id="message" placeholder="Mensaje" rows="8"></textarea>
+                    <!-- <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i> -->
+                    <small>Error message</small>
+                  </div>
+
+                  <!-- <div class="form-control">
+                    <label for="nombre">Password</label>
+                    <input type="password" placeholder="Password" id="password"/>
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                  </div>
+                  <div class="form-control">
+                    <label for="nombre">Password check</label>
+                    <input type="password" placeholder="Password two" id="password2"/>
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                  </div> -->
+
+                  <div class="text-center">
+                    <button class="btn btn-common" id="submit" type="submit">Enviar</button>
+                  </div>
+                  <!-- <button>Submit</button> -->
+                </form>
+              </div>
+
+
             </div>
           </div>
         </div>
@@ -478,6 +527,18 @@
   <script src="js/form-validator.min.js"></script>
   <script src="js/contact-form-script.js"></script>
   <script src="js/main.js"></script>
+
+  <script src="js/send-email-script.js"></script>
+
+
+  <!-- MAIL -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+  (function() {
+  emailjs.init("user_i4cDOHBjk7ZUZCryHV0sy");
+  })();
+  </script>
+
 
 </body>
 

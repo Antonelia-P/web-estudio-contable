@@ -1008,6 +1008,12 @@ button:focus {
   color: #fff;
 }
 
+@media screen and (max-width: 425px) {
+  .counters{
+    background-repeat: round;
+  }
+}
+
 /* ==========================================================================
 11. Testimonial Section Style
  ========================================================================== */
@@ -1234,9 +1240,9 @@ button:focus {
 
 .form-control {
   width: 100%;
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
   padding: 14px;
-  border-color: #fff;
+  /* border-color: #fff; */
   border-radius: 0px;
   color: #fff;
   background: transparent;
@@ -1244,12 +1250,14 @@ button:focus {
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   transition: all 0.3s;
+  position: relative;
+  border-color: #343a4000;
 }
 
 .form-control:focus {
   box-shadow: none;
   color: #fff;
-  border-color: rgb(10, 78, 13);
+  /* border-color: rgb(10, 78, 13); */
   background: transparent;
   outline: none;
 }
@@ -1373,3 +1381,135 @@ footer {
         transition: all 0.3s ease-out 0s; }
         .header_top .header_social ul li a:hover {
           color: rgb(10, 78, 13); }
+
+
+
+/* CONTACT MIO */
+
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,500&display=swap');
+
+
+/* body {
+	background-color: #9b59b6;
+	font-family: 'Open Sans', sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	margin: 0;
+}
+
+.container {
+	background-color: #fff;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+	overflow: hidden;
+	width: 400px;
+	max-width: 100%;
+}
+
+.header {
+	border-bottom: 1px solid #f0f0f0;
+	background-color: #f7f7f7;
+	padding: 20px 40px;
+}
+
+.header h2 {
+	margin: 0;
+} */
+
+.form {
+	padding: 30px 40px;	
+}
+
+/* .form-control {
+	margin-bottom: 10px;
+	padding-bottom: 20px;
+	position: relative;
+  border-color: #343a40;
+} */
+
+.form-control label {
+	display: inline-block;
+	margin-bottom: 5px;
+}
+
+.form-control input {
+	border: 2px solid #f0f0f0;
+	border-radius: 4px;
+	display: block;
+	font-family: inherit;
+	font-size: 14px;
+	padding: 10px;
+	width: 100%;
+}
+
+.form-control textarea {
+	border: 2px solid #f0f0f0;
+	border-radius: 4px;
+	display: block;
+	font-family: inherit;
+	font-size: 14px;
+	padding: 10px;
+	width: 100%;
+  max-height: 165px;
+}
+
+.form-control input:focus {
+	outline: 0;
+	border-color: #777;
+}
+
+.form-control textarea:focus {
+	outline: 0;
+	border-color: #777;
+}
+
+.form-control.success input {
+	border-color: #2ecc71;
+}
+
+.form-control.error input {
+	border-color: #e74c3c;
+}
+
+.form-control.error textarea {
+	border-color: #e74c3c;
+}
+
+.form-control i {
+	visibility: hidden;
+	position: absolute;
+	top: 40px;
+	right: 10px;
+}
+
+.form-control.success i.fa-check-circle {
+	color: #2ecc71;
+	visibility: visible;
+}
+
+.form-control.error i.fa-exclamation-circle {
+	color: #e74c3c;
+	visibility: visible;
+}
+
+.form-control small {
+	color: #e74c3c;
+	position: absolute;
+	bottom: -10px;
+	left: 20px;
+	visibility: hidden;
+  /* top: 60px; */
+  font-size: 15px;
+}
+
+.form-control.error small {
+	visibility: visible;
+}
+
+.form button {
+	margin-top: 20px;
+}
+
