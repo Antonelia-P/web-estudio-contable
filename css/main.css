@@ -1011,8 +1011,7 @@ button:focus {
 /* ==========================================================================
 11. Testimonial Section Style
  ========================================================================== */
-#testimonial {
-  background: url(../img/testimonial-bg.jpg) fixed no-repeat;
+#testimonial { background:linear-gradient( rgba(66, 71, 66, 0.637) 100%, rgba(66, 71, 66, 0.637) 100%),url(../img/Escritorio2.jpeg) fixed no-repeat;
   background-size: cover;
   color: #fff;
   overflow: hidden;
@@ -1037,7 +1036,7 @@ button:focus {
 
 .testimonial-item .testimonial-text span {
   font-size: 14px;
-  color: #999;
+  color: #FFFFFF;
 }
 
 .testimonial-item .testimonial-text p {
