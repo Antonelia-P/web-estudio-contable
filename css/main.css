@@ -762,60 +762,6 @@ button:focus {
 }
 
 /* ==========================================================================
-  7. Video promo Style
-   ========================================================================== */
-.video-promo {
-  background: rgb(10, 78, 13);
-  color: #fff;
-  overflow: hidden;
-  position: relative;
-}
-
-.video-promo .video-promo-content {
-  color: #fff;
-}
-
-.video-promo .video-promo-content h2 {
-  color: #fff;
-  font-size: 30px;
-  text-transform: uppercase;
-  margin-bottom: 30px;
-}
-
-.video-promo .video-promo-content p {
-  margin-bottom: 30px;
-}
-
-.video-promo .video-promo-content .video-popup {
-  width: 80px;
-  height: 80px;
-  text-align: center;
-  border: 3px solid #fff;
-  color: #fff;
-  border-radius: 50%;
-  display: inline-block;
-  font-size: 30px;
-  -webkit-transition: all 0.5s ease-in-out;
-  -moz-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-}
-
-.video-promo .video-promo-content .video-popup i {
-  line-height: 72px;
-}
-
-.overlay {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0px;
-  left: 0px;
-  background: rgb(10, 78, 13);
-  opacity: 0.9;
-  filter: alpha(opacity=90);
-}
-
-/* ==========================================================================
   8. Portfolio Section
    ========================================================================== */
 #portfolios .mix {
@@ -1017,7 +963,10 @@ button:focus {
 /* ==========================================================================
 11. Testimonial Section Style
  ========================================================================== */
-#testimonial { background:linear-gradient( rgba(66, 71, 66, 0.637) 100%, rgba(66, 71, 66, 0.637) 100%),url(../img/Escritorio2.jpeg) fixed no-repeat;
+#testimonial { 
+  /* background:linear-gradient( rgba(66, 71, 66, 0.637) 100%, rgba(66, 71, 66, 0.637) 100%),url(../img/Escritorio2.jpeg) fixed no-repeat; */
+  background: url(../img/Escritorio3.jpeg) fixed no-repeat;
+  /* background-repeat: no-repeat; */
   background-size: cover;
   color: #fff;
   overflow: hidden;
@@ -1272,6 +1221,17 @@ button:focus {
 
 .list-unstyled li {
   color: #d9534f;
+}
+
+#submit:hover {
+  background-color: #3e8e41;
+cursor: pointer;
+}
+
+#submit:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(30px);
 }
 
 /* ==========================================================================
