@@ -1429,6 +1429,10 @@ footer {
 	border-color: #2ecc71;
 }
 
+.form-control.success textarea {
+	border-color: #2ecc71;
+}
+
 .form-control.error input {
 	border-color: #e74c3c;
 }
