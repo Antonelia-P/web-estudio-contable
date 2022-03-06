@@ -964,8 +964,8 @@ button:focus {
 11. Testimonial Section Style
  ========================================================================== */
 #testimonial { 
-  /* background:linear-gradient( rgba(66, 71, 66, 0.637) 100%, rgba(66, 71, 66, 0.637) 100%),url(../img/Escritorio2.jpeg) fixed no-repeat; */
-  background: url(../img/Escritorio3.jpeg) fixed no-repeat;
+  /* background:linear-gradient( rgba(66, 71, 66, 0.555) 100%, rgba(66, 71, 66, 0.555) 100%),url(../img/Escriotriodaniel\ -\ copia.jpg) fixed no-repeat; */
+  background: url(../img/Escriotriodaniel\ -\ copia.jpg) fixed no-repeat;
   /* background-repeat: no-repeat; */
   background-size: cover;
   color: #fff;
