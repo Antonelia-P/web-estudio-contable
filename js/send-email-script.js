@@ -85,7 +85,7 @@ const form = document.getElementById('form');
             }
 
             //ENVIO EL MAIL
-            window.emailjs.send('service_hio1d6b', 'template_8v542pi', tempParams)
+            window.emailjs.send('service_syd7t47', 'template_9umxa02', tempParams)
             .then(function(res){
                 console.log('success', res.status);
                 window.location.href="index.html";
